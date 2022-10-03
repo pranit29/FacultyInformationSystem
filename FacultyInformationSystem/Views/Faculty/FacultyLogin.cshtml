@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Faculty Index";
+}
+
+<style>
+    h1 {
+        color: white;
+    }
+
+    .buttons {
+        font-size: 25px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+    }
+
+    body {
+        background-image: url('https://fisstorag.blob.core.windows.net/fis-container/BackroundBlur.jpg');
+        background-size: cover;
+    }
+</style>
+<h1>Welcome Faculty!</h1>
+<br />
+<br />
+<div class="buttons">
+    <div class="container1">
+        <a asp-action="CreateGrants" asp-controller="Faculty" class="btn-outline-info">Add Grants</a><br /><br />
+        <a asp-action="CreatePublications" asp-controller="Faculty" class="btn-outline-info">Add Publications</a><br /><br />
+    </div>
+   
+</div>
+

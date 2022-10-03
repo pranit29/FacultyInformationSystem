@@ -1,0 +1,31 @@
+﻿@model IEnumerable<FacultyInformationSystem.Models.Department>
+@{
+    ViewData["Title"] = "ViewDepartments";
+}
+<style>
+    body {
+        background: darkgrey;
+        background-image: url('https://fisstorag.blob.core.windows.net/fis-container/backTable.jpg');
+        background-size: cover;
+    }
+</style>
+
+<br />
+<br />
+<div>
+    <h4>Departments</h4>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeptId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeptName)
+            </td>
+
+            <br />
+            <br />
+        </tr>
+    }
+</div>
